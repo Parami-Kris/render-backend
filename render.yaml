@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: flask-backend
+    runtime: python
+    buildCommand: ""
+    startCommand: python server.py
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        value: 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

@@ -37,7 +37,7 @@ def query():
         f"Based on the dataset:\n"
         f"- Total groups: {total_groups}\n"
         f"- Unpaid groups: {unpaid_groups} ({percentage_unpaid:.2f}%)\n"
-        f"\nAll DOBs in the dataset: {dob_list}\n"
+        f"All DOBs in the dataset: {dob_list}\n"
         f"Kids count: {kids_under_18}\n"
         f"- Room bookings: {room_counts}\n\n"
         f"Question: {question}"

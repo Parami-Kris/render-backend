@@ -12,6 +12,7 @@ total_groups = df["GROUP_ID"].nunique()
 unpaid_groups = df[df["status"].str.lower() == "unpaid"]["GROUP_ID"].nunique()
 percentage_unpaid = (unpaid_groups / total_groups) * 100
 room_counts = df["room category"].value_counts().to_dict()
+dob_list = df["dob"].dropna().astype(str).tolist()
 
 @app.route("/query", methods=["POST"])
 def query():
@@ -20,6 +21,7 @@ def query():
         f"Based on the dataset:\n"
         f"- Total groups: {total_groups}\n"
         f"- Unpaid groups: {unpaid_groups} ({percentage_unpaid:.2f}%)\n"
+        f"\nAll DOBs in the dataset: {dob_list}\n"
         f"- Room bookings: {room_counts}\n\n"
         f"Question: {question}"
     )

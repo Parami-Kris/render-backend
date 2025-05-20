@@ -12,7 +12,7 @@ total_groups = df["GROUP_ID"].nunique()
 unpaid_groups = df[df["status"].str.lower() == "unpaid"]["GROUP_ID"].nunique()
 percentage_unpaid = (unpaid_groups / total_groups) * 100
 room_counts = df["room category"].value_counts().to_dict()
-dob_list = df["dob"].dropna().astype(str).tolist()
+dob_list = df["date of birth"].dropna().astype(str).tolist()
 from datetime import datetime
 
 def count_kids(dob_list):

@@ -5,7 +5,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)   
-client = anthropic.Anthropic(api_key="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")
+client = anthropic.Anthropic(api_key="")
 
 df = pd.read_csv("synthetic_user_data.csv")
 total_groups = df["GROUP_ID"].nunique()

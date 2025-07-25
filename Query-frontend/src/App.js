@@ -10,7 +10,7 @@ function App() {
   const askQuestion = async () => {
     setLoading(true);  // Show loading state
 
-    const res = await fetch("https://ssr-backend-qz74.onrender.com/query", {
+    const res = await fetch("*LINK YOUR BACKEND SERVER*", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

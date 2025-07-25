@@ -1,0 +1,64 @@
+/* app.css */
+
+/* Vibrant background and full page centering */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(45deg, #ff6ec7, #ff9900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Centered content styling */
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+}
+
+/* Input and button styling */
+input {
+  width: 300px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff9900;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Loading text styling */
+.loading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff6ec7;
+}
+
+/* Logo image styling */
+.logo {
+  width: 100px; /* Adjust size */
+  margin-bottom: 20px;
+}
+
+/* "Hello" text styling */
+.hello-text {
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fff;
+}
